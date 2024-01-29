@@ -1,0 +1,81 @@
+.word-selector-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 300px;
+  position: relative;
+  background-color: blue;
+}
+
+.word-list {
+  flex: 1;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+li.selected {
+  background-color: #e0e0e0;
+}
+
+.lines {
+  position: relative;
+  flex: 1;
+}
+
+.line {
+  position: absolute;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  left: -7.5px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
